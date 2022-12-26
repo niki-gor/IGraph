@@ -13,11 +13,10 @@ void MatrixGraph::AddEdge(int from, int to) {
 int MatrixGraph::VerticesCount() const {
     return n;
 }
-#include <cassert>
+
 std::vector<int> MatrixGraph::GetNextVertices(int vertex) const {
     std::vector<int> result;
     std::ranges::copy_if(std::views::iota(0, n), std::back_inserter(result), [&](int i) {
-        assert(i < n);
         return e[vertex][i];
     });
     return result;
