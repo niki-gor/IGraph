@@ -1,7 +1,3 @@
-//
-// Created by niki-gor on 12/26/22.
-//
-
 #include "SetGraph.hpp"
 
 SetGraph::~SetGraph() {
@@ -26,7 +22,7 @@ std::vector<int> SetGraph::GetNextVertices(int vertex) const {
 
 std::vector<int> SetGraph::GetPrevVertices(int vertex) const {
     std::vector<int> result;
-    std::ranges::copy_if(std::views::iota(n), std::back_inserter(result), [&](int i) {
+    std::ranges::copy_if(std::views::iota(0, n), std::back_inserter(result), [&](int i) {
         return e[i].contains(vertex);
     });
     return result;

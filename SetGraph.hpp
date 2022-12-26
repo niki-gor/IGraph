@@ -1,7 +1,3 @@
-//
-// Created by niki-gor on 12/26/22.
-//
-
 #ifndef IGRAPH_SETGRAPH_HPP
 #define IGRAPH_SETGRAPH_HPP
 

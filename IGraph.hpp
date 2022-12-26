@@ -1,7 +1,3 @@
-//
-// Created by niki-gor on 12/26/22.
-//
-
 #ifndef IGRAPH_IGRAPH_HPP
 #define IGRAPH_IGRAPH_HPP
 

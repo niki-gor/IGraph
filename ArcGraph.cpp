@@ -1,7 +1,3 @@
-//
-// Created by niki-gor on 12/26/22.
-//
-
 #include "ArcGraph.hpp"
 
 ArcGraph::~ArcGraph() {
